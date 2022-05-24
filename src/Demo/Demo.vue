@@ -224,7 +224,6 @@ export default {
                   alert("Hotkey menu triggered either via clicking or shortcut.");
                 }
               },
-              { text: "Material icon", icon: "shopping_cart", click: () => window.open("https://material.io/resources/icons", "_blank") },
               { text: "Platform emoji", emoji: "call_me_hand", click: () => window.open("https://raw.githubusercontent.com/omnidan/node-emoji/master/lib/emoji.json", "_blank") },
               { text: "Menu text is wrapped when it is too long" },
               { is: DemoCustomMenuItem, text: "Your component", click: () => alert("Your custom action!") },
