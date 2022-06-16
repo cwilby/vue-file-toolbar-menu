@@ -18,9 +18,6 @@ import BarButtonColor from './BarButtonColor.vue'
 import BarSeparator from './BarSeparator.vue'
 import BarSpacer from './BarSpacer.vue'
 
-import 'material-icons/iconfont/material-icons.css'
-
-
 export default {
   components: {
     BarButtonGeneric,

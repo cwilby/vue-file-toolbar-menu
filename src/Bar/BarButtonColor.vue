@@ -12,14 +12,9 @@
 
 <script>
 import BarButtonGeneric from './BarButtonGeneric.vue'
-import VueColor from 'vue-color'
 
 export default {
   mixins: [ BarButtonGeneric ],
-
-  components: {
-    ...VueColor
-  },
 
   data () {
     return {

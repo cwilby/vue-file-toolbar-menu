@@ -1,3 +1,7 @@
+## v1.4.0
+
+- Changed components to use icon classes
+
 ## v1.3.4
 
 - \[Color button\] Prevent calling `color_update()` callback when the color is changed not from the color palette

@@ -6,14 +6,11 @@
     :title="item.title"
     :style="{ height: item.height+'px' }">
 
-    <span v-if="item.icon" class="material-icons icon">{{ item.icon }}</span>
+    <span v-if="item.icon" :class="item.icon"></span>
     <span v-if="item.emoji" class="emoji">{{ get_emoji(item.emoji) }}</span>
     <span v-if="item.text" class="label">{{ item.text }}</span>
     <span v-if="item.html" class="label" v-html="item.html"></span>
     <span v-if="item.hotkey" class="hotkey">{{ hotkey }}</span>
-    
-    <span v-if="item.menu && item.custom_chevron" class="chevron" v-html="item.custom_chevron"></span>
-    <span v-else-if="item.menu" class="material-icons chevron">chevron_right</span>
 
     <component ref="menu" class="menu" v-if="item.menu"
       :is="get_component(item.menu)"
